@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Test Page</title>
+    <!-- Link to jQuery JS -->
+    <script src="https://edge-sync-test-cdn.azureedge.net/testf/jquery-3.7.1.min.js"></script>
+    <style>
+        /* Additional styling for the button */
+        #testButton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #testButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Test Page</h1>
+    <button id="testButton">Click Me</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#testButton').click(function() {
+                console.log('Button was clicked!');
+                alert('Button clicked!');
+            });
+        });
+    </script>
+</body>
+</html>
